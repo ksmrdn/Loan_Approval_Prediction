@@ -5,7 +5,7 @@
 - **Dataset**: The dataset used in this repository is a dataset from the Kaggle website.<br>
 ![dataset](./images/dataset.PNG)
 <br>
-Source: [click_here](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset)
+Source: [Kaggle](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset)
 
 - **Purpose** : Predict the eligibility of the applicant in terms of loan. Loan Prediction system is a system which provides you a interface for loan approval to the applicants application of loan. Applicants provides the system about their personal information and according to their information system gives his status of availability of loan.
 
