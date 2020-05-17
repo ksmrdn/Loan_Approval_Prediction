@@ -12,15 +12,10 @@ Source: [click_here](https://www.kaggle.com/altruistdelhite04/loan-prediction-pr
 - **Machine Learning Algorithms**: Logistic Regression, KNearest Neighbors, Gaussian Naive Bayes,  Complement Naive Bayes, Random Forest, dan Support Vector Machine.
 
 <hr>
-<br>
 In this repository, those are a Jupyter Notebook and Folder Flask:
-<br>
-<hr>
 File (app_loan.py): Flask application file with the main server. <br>
 File (loan_predict.ipynb): Notebook files contain data collection work, Exploratory Data Analysis (EDA), and Classification Modeling.
-
 <hr>
-<br>
 
 ## __Data Explanation__
 
@@ -75,7 +70,6 @@ There is a __"Predict"__ button, to go to the __"Result"__ page.<br>
 
 - __Second Apllicant__:<br>
 ![home_flask2](./images/form_exp02.png)
-<br>
 
 ### **Predict**
 Final display (``http://127.0.0.1:3000/predict``). The __"predict"__ page shows the section that displays the information that has been filled in, then has a judgment on the prediction of whether the user / applicant's status is __"Approved"__ or __"Non Approved"__.
