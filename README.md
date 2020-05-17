@@ -16,8 +16,8 @@ Source: [click_here](https://www.kaggle.com/altruistdelhite04/loan-prediction-pr
 In this repository, those are a Jupyter Notebook and Folder Flask:
 <br>
 <hr>
-> **__File (app_loan.py)__**: Flask application file with the main server. <br>
-> **__File (loan_predict.ipynb)__**: Notebook files contain data collection work, Exploratory Data Analysis (EDA), and Classification Modeling.
+> __File (app_loan.py)__: Flask application file with the main server. <br>
+> __File (loan_predict.ipynb)__: Notebook files contain data collection work, Exploratory Data Analysis (EDA), and Classification Modeling.
 
 <hr>
 <br>
