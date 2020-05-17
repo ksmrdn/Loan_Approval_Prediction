@@ -3,7 +3,7 @@
 > #### Predict the eligibility of the applicant in terms of loan by using and comparing several classification methods (Logistic Regression, Neighbor KNearest, Gaussian Naive Bayes, Complement Naive Bayes, Random Forest, and Support Vector Machine) and representing product using web-based localhost as an interface.
 
 - **Dataset**: The dataset used in this repository is a dataset from the Kaggle website.<br>
-![dataset](./images/dataset.png)
+![dataset](./images/dataset.PNG)
 <br>
 Source: [click_here](https://www.kaggle.com/altruistdelhite04/loan-prediction-problem-dataset)
 
@@ -87,11 +87,11 @@ The applicant's risk to the loan company will be seen in the pie graph.
 There is also a __"Loan Egibility Checker"__ button, to return to the __"Home"__ page.<br>
 
 - __First Applicant__:<br>
-![home_flask1](./images/result_exp1.png)
+![home_flask1](./images/result_exp1.PNG)
 <br>
 
 - __Second Apllicant__:<br>
-![home_flask2](./images/result_exp2.png)
+![home_flask2](./images/result_exp2.PNG)
 <br>
 
 > **Note**: For further discussion if you have questions, criticisms, and suggestions, feel free to contact my email: kusumardanar@gmail.com. 
