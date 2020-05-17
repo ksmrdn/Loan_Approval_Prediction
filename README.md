@@ -16,8 +16,8 @@ Source: [click_here](https://www.kaggle.com/altruistdelhite04/loan-prediction-pr
 In this repository, those are a Jupyter Notebook and Folder Flask:
 <br>
 <hr>
-> **File ("app_loan.py")**: Flask application file with the main server.
-> **File ("loan_predict.ipynb")**: Notebook files contain data collection work, Exploratory Data Analysis (EDA), and Classification Modeling.
+> **File (app_loan.py)**: Flask application file with the main server.
+> **File (loan_predict.ipynb)**: Notebook files contain data collection work, Exploratory Data Analysis (EDA), and Classification Modeling.
 
 <hr>
 <br>
@@ -65,7 +65,7 @@ The following is a preview of the App created using Flask to display:
 
 ### **Home**
 Initial display (``http://127.0.0.1:3000``) The home page shows the initial interaction with the user/ applicant, they will be notified that the web requires some requesting information.
-Only the features described in **File (`loan_predict.ipynb`)** will be used in predictions.
+Only the features described in **File (loan_predict.ipynb)** will be used in predictions.
 
 There is a __"Predict"__ button, to go to the __"Result"__ page.<br>
 
