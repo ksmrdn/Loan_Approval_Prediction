@@ -12,7 +12,7 @@ Source: [click_here](https://www.kaggle.com/altruistdelhite04/loan-prediction-pr
 - **Machine Learning Algorithms**: Logistic Regression, KNearest Neighbors, Gaussian Naive Bayes,  Complement Naive Bayes, Random Forest, dan Support Vector Machine.
 
 <hr>
-In this repository, those are a Jupyter Notebook and Folder Flask:
+In this repository, those are a Jupyter Notebook and Folder Flask: <br>
 File (app_loan.py): Flask application file with the main server. <br>
 File (loan_predict.ipynb): Notebook files contain data collection work, Exploratory Data Analysis (EDA), and Classification Modeling.
 <hr>
@@ -51,7 +51,6 @@ File (loan_predict.ipynb): Notebook files contain data collection work, Explorat
     __Loan_Status__ : __Yes__ or __No__
 
 <hr>
-<br>
 
 ## **Flask Preview**
 The following is a preview of the App created using Flask to display:
