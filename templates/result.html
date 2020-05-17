@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Egibility</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    body {
+        background-color: rgb(34, 200, 238);
+        font-family: Segoe UI;
+        text-align: center;
+        vertical-align: middle
+    }
+    form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        vertical-align: middle        
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="http://127.0.0.1:2070">   
+            <nav style="background-color: rgb(34, 200, 238);text-align: center; height: 50px; padding: 5px;">
+                <a class="navbar-brand" href="/" style="color: white;">Loan Egibility Checker</a> 
+            </nav>
+        </form>
+    </div>
+   
+<center>
+<h1 style="background-color:#00D0FF; width: 900px; padding: 10px 0px 10px;; 
+    border: 4px solid blue; text-align:justify; opacity:0.9; font-size: large;">
+    <center>
+        <p style="color: blue; font: size 100px;">LOAN EGIBILITY</p>
+    </center>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">Name</div>
+            <div class="col col-lg-2">{{data['nama']}}</div>
+            <div class="col col-lg-2">Credit History</div>
+            <div class="col col-lg-2">{{data['kredit']}}</div>
+        <div class="w-100"></div>
+            <div class="col col-lg-2">Gender</div>
+            <div class="col col-lg-2">{{data['sex']}}</div>
+            <div class="col col-lg-2">Property Area</div>
+            <div class="col col-lg-2">{{data['lahan']}}</div>
+        <div class="w-100"></div>
+            <div class="col col-lg-2">Job</div>
+            <div class="col col-lg-2">{{data['pekerjaan']}}</div>
+            <div class="col col-lg-2">Total Income</div>
+            <div class="col col-lg-2">US $ {{data['pendapatan']}}</div>  
+        <div class="w-100"></div>
+            <div class="col col-lg-2">Dependents</div>
+            <div class="col col-lg-2">{{data['keluarga']}}</div>
+            <div class="col col-lg-2">Loan Amount</div>
+            <div class="col col-lg-2">US $ {{data['pinjaman']}},000</div>
+        <div class="w-100"></div>
+            <div class="col col-lg-2">Marital Status</div>
+            <div class="col col-lg-2">{{data['nikah']}}</div>
+            <div class="col col-lg-2">Loan Term</div>
+            <div class="col col-lg-2">{{data['jangka']}} Days</div>
+        <div class="w-100"></div>
+            <div class="col col-lg-2">Education</div>
+            <div class="col col-lg-2">{{data['pendidikan']}}</div>
+            <div class="col col-lg-2">Status</div>
+            <div class="col col-lg-2">{{data['prediksi']}}</div> 
+        </div>
+    </div>
+
+    <center>
+        <img src="{{gambar}}" align='middle'/>
+    </center>     
+</h1>
+</center>
+</body>
+</html>

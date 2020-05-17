@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Checker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    body {
+        background-color: rgb(34, 200, 238);
+        font-family: Segoe UI;
+        text-align: center;
+        vertical-align: middle
+    }
+    form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        vertical-align: middle        
+    }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+        <img src="http://localhost:3000/filetemp/loan_egibility.png" width="600px" height="auto"/>
+    <br>
+    <br>
+    <form method='POST' action="http://127.0.0.1:3000/predict">
+    <div class="container" style="margin-top: 2%;">
+        <center>
+        <p style="color: blue;">FILL IN THE FORM</p>
+        </center>
+        <div class="row">
+            <div class="col">
+                    <div class="form-group">
+                        <label for="formName">Name</label>
+                        <input type="text" class="form-control" name="Name" id="formName">
+                        <br>
+                                     
+                        <label for="formJob">Job</label>
+                        <input type="text" class="form-control" name="Job" id="formJob">
+                        <br>
+                        
+                        <label>Applicant Income (US $)</label>
+                        <input type="number" class="form-control" id="AI" name="AppIn" step="0.1" min=0> 
+                        <br>
+                       
+                        <label>Co Applicant Income (US $)</label>
+                        <input type="number" class="form-control" id="CoI" name="CoIn" step="0.1" min=0> 
+                        <br>
+
+                        <label>Loan Amount (Thousand US $)</label>
+                        <input type="number" class="form-control" id="LoA" name="LoAm" step="0.1" min=0> 
+                        <br>
+
+                        <label>Loan Amount Term (Days)</label>
+                        <input type="number" class="form-control" id="LoTe" name="Term" step="1" min=0> 
+                        <br>
+                    </div>
+            </div>
+
+            <div class="col">
+                <label for="formGender">Gender: </label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="genderMen"
+                            value=1>
+                        <label class="form-check-label" for="genderMen">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="genderWomen"
+                            value=0>
+                        <label class="form-check-label" for="genderWomen">Female</label>
+                    </div>
+                <br><br>
+
+                <label for="formDep">Dependents: </label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dep0"
+                            value=0>
+                        <label class="form-check-label" for="dep0">0</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dep1"
+                            value=1>
+                        <label class="form-check-label" for="dep1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dep2"
+                            value=2>
+                        <label class="form-check-label" for="dep2">2</label>
+                    </div> 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="dep3"
+                            value=3>
+                        <label class="form-check-label" for="dep3">>2</label>
+                    </div>
+                <br><br>
+
+                <label for="formMar">Marriage: </label><br>
+                    <div class="form-check form-check-inline">
+                       <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="marNo"
+                            value=0>
+                        <label class="form-check-label" for="marNo">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">                                
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="marYes"
+                            value=1>
+                        <label class="form-check-label" for="marYes">Yes</label>
+                    </div>
+                <br><br>
+
+                <label for="formEdu">Education: </label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="eduNo"
+                            value=1>
+                        <label class="form-check-label" for="eduNo">Non Graduate</label>
+                    </div>
+                    <div class="form-check form-check-inline">                                
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="eduYes"
+                            value=0>
+                        <label class="form-check-label" for="eduYes">Graduate</label>
+                    </div>
+                <br><br>
+
+                <label for="formHis">Credit History: </label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="hisNo"
+                            value=0>
+                        <label class="form-check-label" for="hisNo">Never</label>
+                    </div>
+                    <div class="form-check form-check-inline">                                
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="hisYes"
+                            value=1>
+                        <label class="form-check-label" for="hisYes">Yes</label>
+                    </div>
+                <br><br>
+
+                <label for="formPro">Property Area: </label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="area0"
+                            value=0>
+                        <label class="form-check-label" for="area0">Rural</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="area1"
+                            value=1>
+                        <label class="form-check-label" for="dep1">Semiurban</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="area2"
+                            value=2>
+                        <label class="form-check-label" for="area2">Urban</label>
+                    </div>
+                <br><br><br><br>
+            </div>
+        </div>
+        <center>
+            <input class="btn btn-primary btn-lg" href="/predict" style="color: white;" role="button" 
+                type="submit" value="Predict" />    
+        </center>
+    </div>
+    </form>
+</body>
+</html>
